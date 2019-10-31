@@ -1,0 +1,4 @@
+# conjur policy load root root.yml
+---
+- !policy
+  id: ansible

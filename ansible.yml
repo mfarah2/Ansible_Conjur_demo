@@ -1,0 +1,13 @@
+# conjur policy load ansible ansible.yml
+
+- !variable dbpassword
+
+- !host controller
+
+- !permit
+  role: !host controller
+  privileges: [ read, execute ]
+  resource: !variable dbpassword
+  
+# After loading this policy, add the value Cyberark1 to dbpassword:
+# conjur variable values add dbpassword Cyberark1

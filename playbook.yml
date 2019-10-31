@@ -1,0 +1,8 @@
+---
+hosts: localhost
+gather_facts: no
+
+  tasks:
+    - name: Print out ansible/dbpassword value from Conjur
+      debug:
+        msg: "{{ lookup('conjur_variable', '/ansible/dbpassword') }}"
