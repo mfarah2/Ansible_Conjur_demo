@@ -1,3 +1,0 @@
-machine https://conjur.cyberark.com/authn
-    login host/hostID
-    password 1234567890abcdefghijklmnopqrstuvwxyz
